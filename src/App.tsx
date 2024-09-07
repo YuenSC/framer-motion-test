@@ -1,14 +1,22 @@
-import { motion } from "framer-motion";
 import "./App.css";
+import BallWithGesture from "./components/BallWithGesture";
+import ControlledBall from "./components/ControlledBall";
+import MotionValueDemo from "./components/MotionValueDemo";
+import ResponsiveByCSSVariableDemo from "./components/ResponsiveByCSSVariableDemo";
+import SlideInDemo from "./components/SlideInDemo";
+import UncontrolledBall from "./components/UncontrolledBall";
+import VariantDemoList from "./VariantDemoList";
 
 function App() {
   return (
-    <main>
-      <motion.div
-        className="h-10 w-10 rounded-full bg-blue-500"
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-      />
+    <main className="flex flex-col gap-2">
+      <ResponsiveByCSSVariableDemo />
+      <MotionValueDemo />
+      <UncontrolledBall />
+      <ControlledBall />
+      <BallWithGesture />
+      <VariantDemoList />
+      <SlideInDemo />
     </main>
   );
 }
