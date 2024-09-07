@@ -1,5 +1,5 @@
 import { motion, Variants } from "framer-motion";
-import Tooltip from "./components/ui/tooltip";
+import Tooltip from "./ui/tooltip";
 
 const list = {
   hidden: { opacity: 0 },
